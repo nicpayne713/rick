@@ -48,39 +48,15 @@
         }
     </style>
 
-    <!-- var audio = document.getElementById("rick"); -->
-    <!-- audio.play(); -->
-    <!-- <script> -->
-    <!--     function myFunction() { -->
+    <script>
+        function myFunction() {
+            var audio = document.getElementById("rick");
+            audio.play();
 
-    <!--         document.body.style.backgroundImage = 'url("rick-roll.gif")'; -->
-    <!--         const div = document.getElementById('msg'); -->
+            document.body.style.backgroundImage = 'url("static/rick-roll.gif")';
+            const div = document.getElementById('msg');
 
-    <!--         div.innerHTML = ` -->
-    <!--         <h1 class="rainbow"> -->
-    <!--         <center> -->
-    <!--             Never Gonna Give You -->
-    <!--         </center> -->
-    <!--         </h1> -->
-
-    <!--         <h1 class="rainbow"> -->
-    <!--         <strong> -->
-    <!--             <center> -->
-    <!--                 Sudo -->
-    <!--             </center> -->
-    <!--         </strong> -->
-    <!--         </h1> -->
-    <!--         ` -->
-    <!--     } -->
-    <!-- </script> -->
-
-</head>
-
-<body style="background-image: url(&quot;rick-roll.gif&quot;);">
-    <div class="row h-100">
-        <div class="col-sm-12 my-auto">
-
-            <div id="msg">
+            div.innerHTML = `
             <h1 class="rainbow">
             <center>
                 enjoy being
@@ -101,10 +77,41 @@
                 </center>
             </strong>
             </h1>
-            </div>
-        </div>
+            `
+        }
+    </script>
 
-    </div>
+</head>
+
+<!-- <body style="background-image: url(&quot;static/rick-roll.gif&quot;);"> -->
+<!--     <div class="row h-100"> -->
+<!--         <div class="col-sm-12 my-auto"> -->
+
+<!--             <div id="msg"> -->
+<!--             <h1 class="rainbow"> -->
+<!--             <center> -->
+<!--                 enjoy being -->
+<!--             </center> -->
+<!--             </h1> -->
+
+<!--             <h1 class="rainbow"> -->
+<!--             <strong> -->
+<!--                 <center> -->
+<!--                     never -->
+<!--                 </center> -->
+<!--             </strong> -->
+<!--             </h1> -->
+<!--             <h1 class="rainbow"> -->
+<!--             <strong> -->
+<!--                 <center> -->
+<!--                     given up -->
+<!--                 </center> -->
+<!--             </strong> -->
+<!--             </h1> -->
+<!--             </div> -->
+<!--         </div> -->
+
+<!--     </div> -->
 
     <!-- <audio loop autoplay> -->
     <!--     <source src="rickroll.mp3" type="audio/mp3"> -->
@@ -113,9 +120,34 @@
     <!-- <audio id="rick" src="rickroll.mp3" type="audio/mpeg" loop="true"> -->
     <!-- </audio> -->
 
-<audio autoplay loop src="rickroll.mp3"></audio>
+<!-- <audio autoplay loop src="static/rickroll.mp3"></audio> -->
 
 
+<body>
+    <div class="row h-100">
+        <div class="col-sm-12 my-auto">
+
+            <div id="msg">
+                <center>
+
+                    <h1>Pype</h1>
+                    <h1>Presents</h1>
+                    <img src="static/rick.jpeg" width="50%" onClick="myFunction()">
+
+                    <h1>Click to Enter</h1>
+                    <h3>Best viewed with audio enabled</h3>
+                </center>
+
+            </div>
+        </div>
+
+    </div>
+
+    <audio id="rick" src="static/rickroll.mp3" type="audio/mp3" loop="true">
+    </audio>
+
+
+</body>
 
 
 </body></html>
