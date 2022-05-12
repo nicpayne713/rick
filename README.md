@@ -1,5 +1,7 @@
 # Rick Roll
 
-## TODO
+Why do this?
 
-[] audio
+Why not?
+
+Get roll'd [here](https://nicpayne713.github.io/rick/)
